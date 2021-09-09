@@ -13,8 +13,10 @@ namespace chapter1Exercises
             bS = Convert.ToInt32(Console.ReadLine());
             dA = 0.04 * bS;
             hR = 0.02 * bS;
-            Console.WriteLine("Your dearness allowance is Rs."+ dA);
-            Console.WriteLine("Your house rent allowance is Rs."+hR);
+            Console.WriteLine("Your dearness allowance is Rs."+ dA + "\n");
+            Console.WriteLine("Your house rent allowance is Rs."+hR+ "\n");
+            total = dA + hR + bS;
+            Console.WriteLine("Your gross monthly salary will be " + total+ "Rs");
             */
 
             /*----------------------------------------------------*/
@@ -108,6 +110,7 @@ namespace chapter1Exercises
 
             /*----------------------------------------------------*/
 
+            /*
             //h
             int n, a, b, c, d, e;
             Console.WriteLine("Ente a 5 digit number");
@@ -118,6 +121,51 @@ namespace chapter1Exercises
             d = (n / 1000) % 10;
             e = (n / 10000) % 10;
             Console.WriteLine("Reversed digits are " + a+b+c+d+e);
+            */
+            
+            /*----------------------------------------------------*/
+            
+            /*
+            //i
+            int n, f, l, sum;
+            Console.WriteLine("Enter a four digit number");
+            n = Convert.ToInt32(Console.ReadLine());
+            f = (n / 1000) % 10;
+            l = n % 10;
+            Console.WriteLine("First digit is " + f + "\n" + "Last digit is " + l + "\n");
+            sum = l + f;
+            Console.WriteLine("Sum of first and last digit is " + sum);
+            */
+
+            /*----------------------------------------------------*/
+
+            /*
+            //j
+            //total population = 80,000
+            //men= 52% of population = 80,000*0.52 = 41,600
+            //women = 48% of population = 80,000*0.48 = 38,400
+            //total literacy = 48% of population = 80,000*0.48 = 38,400
+            //thus, total illetracy = 80,000 - 38,400 = 41,600
+            //literate men = 35% of pupolation = 80,000*0.35 = 28,000
+            double men, women, literateMen, illiterateMen, literateWoman, illiterateWomen, totalLiteracy, totalIlletracy, population;
+            population = 80000;
+            men = 41600;
+            women = 38400;
+            totalLiteracy = 38400;
+            totalIlletracy = 41600;
+            literateMen = 28000;
+            illiterateMen = totalLiteracy - literateMen;
+            illiterateWomen = totalIlletracy - illiterateMen;
+            Console.WriteLine("Percentage of illetrate men is " + illiterateMen / population * 100 + "\n" +
+                "Percentage of illetrate women is " + illiterateWomen / population * 100 + "\n");
+            Console.WriteLine("Total number of illetrate men is " + illiterateMen + "\n" +
+                "Total number of illetrate woman is " + illiterateWomen + "\n");
+            */
+
+            /*----------------------------------------------------*/
+
+            //k
+            
 
         }
     }
