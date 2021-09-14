@@ -177,6 +177,33 @@ namespace chapter1Exercises
 
             /*----------------------------------------------------*/
             
+            /*
+            //l
+            int sp_ofOneItem,total_sp, cp_ofOneItem, profit_OfoneItem, total_profit, items=15;
+            Console.WriteLine("Enter the total Selling Price of 15 items");
+            total_sp = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the total profit earned");
+            total_profit = Convert.ToInt32(Console.ReadLine());
+            sp_ofOneItem = total_sp / items; //sp of one item
+            profit_OfoneItem = total_profit / 15; //profit earned from one item
+            cp_ofOneItem = sp_ofOneItem - profit_OfoneItem; //cost price of one item
+            Console.WriteLine("The cost price of one item is " + cp_ofOneItem + " rupees");
+            */
+            
+            /*----------------------------------------------------*/
+            
+            /*
+            //m
+            int n, a, b, c, d, e;
+            Console.WriteLine("Ente a 5 digit number");
+            n = Convert.ToInt32(Console.ReadLine());
+            a = ((n / 10000) % 10) + 1; 
+            b = ((n / 1000) % 10) + 1; 
+            c = ((n / 100) % 10) + 1;
+            d = ((n / 10) % 10) + 1;
+            e = (n % 10) + 1;
+            Console.WriteLine(a +""+ b+"" + c+"" + d+"" + e);
+            */
         }
     }
 }
