@@ -165,8 +165,18 @@ namespace chapter1Exercises
             /*----------------------------------------------------*/
 
             //k
-            
+            /*
+            int amount,tens,fifties,hunreds;
+            Console.WriteLine("Enter your amount in 100's");
+            amount=Convert.ToInt32(Console.ReadLine());
+            tens = amount / 10;
+            fifties = amount / 50;
+            hunreds = amount / 100;
+            Console.WriteLine("You can get \n" + tens + " 10 rupee notes \n" + fifties + " fifty rupee notes\n" + hunreds + " hundred rupee notes");
+            */
 
+            /*----------------------------------------------------*/
+            
         }
     }
 }
