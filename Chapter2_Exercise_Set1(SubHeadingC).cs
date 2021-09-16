@@ -173,16 +173,83 @@ namespace Chapter2Exercises
             */
 
             //-------------------------------------------------------------
-
+            /*
             //j
+            //slope = y2 - y1 / x2 - x1
+            //If slopes of both these points are equal, then all these 3 points lie on same straight line.
+            int x1, y1, x2, y2, x3, y3, m, n;
+            Console.WriteLine("Enter x and y coordinates of point 1");
+            x1 = Convert.ToInt32(Console.ReadLine());
+            y1 = Convert.ToInt32(Console.ReadLine());
+            
+            Console.WriteLine("Enter x and y coordinates of point 2");
+            x2 = Convert.ToInt32(Console.ReadLine());
+            y2 = Convert.ToInt32(Console.ReadLine());
+            
+            Console.WriteLine("Enter x and y coordinates of point 3");
+            x3 = Convert.ToInt32(Console.ReadLine());
+            y3 = Convert.ToInt32(Console.ReadLine());
+
+            m = (y2 - y1) / (x2 - x1) ;
+            n = (y3 - y2)  / (x3 - x2) ;
+            
+            if (m == n)
+                Console.WriteLine("All 3 points fall on a straight line!");
+            else
+                Console.WriteLine("All 3 points do NOT fall on a straight line!");
+            */
 
             //-------------------------------------------------------------
 
+            /*
             //k
+            //formula to find distance from point(x,y) to circle centre(cx,yx)
+            //distance = sqrt(pow((x-cx),2) + pow((y-cy),2))
+            int x, y, r, cx, cy;            
+            double distance;//Because square root can be a decimal number
+            Console.WriteLine("Enter the x and y coordinates of the point");
+            x = Convert.ToInt32(Console.ReadLine());
+            y = Convert.ToInt32(Console.ReadLine());
+            
+            Console.WriteLine("Enter the x and y coordinates of the circle centre");
+            cx = Convert.ToInt32(Console.ReadLine());
+            cy = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter the radius of the circle");
+            r = Convert.ToInt32(Console.ReadLine());
+
+            distance = Math.Sqrt(Math.Pow(x - cx, 2) + Math.Pow(y - cy, 2));
+            Console.WriteLine("Distance is "+ distance);
+
+            if (distance > r)
+                Console.WriteLine("Point lies outside the circle");
+            else if (distance == r)
+                Console.WriteLine("Point lies on the circle");
+            else
+                Console.WriteLine("Point lies inside the circle");
+            */
+
+            //-------------------------------------------------------------
+
+            /*
+            //l
+            int x, y;
+            Console.WriteLine("Enter the x and y coordinates of a point");
+            x = Convert.ToInt32(Console.ReadLine());
+            y = Convert.ToInt32(Console.ReadLine());
+            if (x == 0 && y == 0)
+                Console.WriteLine("Point lies on the origin");
+            else if (y ==0 && x>0)
+                Console.WriteLine("Point lies on x axis");
+            else if (x==0&&y>0)
+                Console.WriteLine("Point lies on y axis");
+            else
+                Console.WriteLine("Point lies somewhere else");
+            */
 
             //-------------------------------------------------------------
             //-------------------------------------------------------------
-           
+            
         }
     }
 }
