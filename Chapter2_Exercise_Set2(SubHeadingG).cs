@@ -21,7 +21,25 @@ namespace Chapter2ExerciseSet2_SubHeadingG_
 
             //-------------------------------------------------------------
 
+             /*
             //b
+            char character;
+            int AsciCode;
+            Console.WriteLine("Enter a character");
+            character = Convert.ToChar(Console.ReadLine());
+            AsciCode = (int)character;
+            Console.WriteLine("The AsciCode is " + AsciCode);
+            if (AsciCode >= 65 && AsciCode <= 90)
+                Console.WriteLine("You entered a capital letter");
+            else if (AsciCode >= 97 && AsciCode <= 122)
+                Console.WriteLine("You entered a small case letter");
+            else if (AsciCode >= 48 && AsciCode <= 57)
+                Console.WriteLine("You entered a number");
+            else if ((AsciCode >= 0 && AsciCode <= 47) || (AsciCode >= 58 && AsciCode <= 67) || (AsciCode >= 91 && AsciCode <= 96) || (AsciCode >= 123 && AsciCode <= 127))
+                Console.WriteLine("You entered a special character!");
+            else
+                Console.WriteLine("Wrong value entered try again!");
+            */
 
             //-------------------------------------------------------------
 
