@@ -43,10 +43,26 @@ namespace Set3_SubHeading_K__
 
             //[K] Attempt the follwing
 
-            //a
+           //a
+            /*
             //1
+            char character;
+            int AsciCode;
+            Console.WriteLine("Enter a character");
+            character = Convert.ToChar(Console.ReadLine());
+            AsciCode = (int)character;
+            Console.WriteLine(AsciCode >= 97 && AsciCode <= 122 ? "Small letter" : "Not small letter");
+            */
 
+            /*
             //2
+            char character;
+            int AsciCode;
+            Console.WriteLine("Enter a character");
+            character = Convert.ToChar(Console.ReadLine());
+            AsciCode = (int)character;
+            Console.WriteLine((AsciCode >= 0 && AsciCode <= 47) || (AsciCode >= 58 && AsciCode <= 67) || (AsciCode >= 91 && AsciCode <= 96) || (AsciCode >= 123 && AsciCode <= 127) ? "Special Character" : "Not Special Character");
+            */
 
 
             //-----------------------------------------------------
